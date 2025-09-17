@@ -1,8 +1,7 @@
-# CICD using GitHub actions
+# CICD using GitHub Actions
 
 name: CI/CD
 
-# Exclude the workflow to run on changes to helm chart
 on:
   push:
     branches:
@@ -47,7 +46,12 @@ jobs:
       - name: Run golangci-lint
         uses: golangci/golangci-lint-action@v6
         with:
-          version: v1.58.1  # ✅ Go 1.22 supported from v1.57.1
+          version: v1.60.3       # <-- Updated version to avoid the internal/goarch error
+          install-mode: binary
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          verify: true
+          skip-cache: false
+          skip-save-cache: false
 
   push:
     runs-on: ubuntu-latest
