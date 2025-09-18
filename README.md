@@ -71,7 +71,7 @@ The project includes a robust GitHub Actions pipeline with the following stages:
 
 Docker images stored on DockerHub:
 
-![Docker Registry](Screenshot-From-2025-09-18-05-49-42.jpg)
+![Docker Registry](images/Screenshot-From-2025-09-18-05-49-42.jpg)
 
 Details:
 - **Repository:** rohittsinghh/go-web-app
@@ -83,7 +83,16 @@ Details:
 
 Helm charts provide flexibility for multiple environments:
 
-![Helm Values](Screenshot-From-2025-09-18-05-50-55.jpg)
+![Helm Values](images/Screenshot-From-2025-09-18-05-50-55.jpg)
+```bash
+replicaCount: 1
+image:
+repository: rohittsinghh/go-web-app
+tag: "17814074756"
+pullPolicy: IfNotPresent
+ingress:
+enabled: false
+```
 ---
 
 ---
@@ -92,7 +101,7 @@ Helm charts provide flexibility for multiple environments:
 
 The deployed application home page:
 
-![Application Homepage](Screenshot-From-2025-09-18-12-55-45.jpg)
+![Application Homepage](images/Screenshot-From-2025-09-18-12-55-45.jpg)
 
 Features:
 - **Courses**: Zero to Hero DevOps topics
