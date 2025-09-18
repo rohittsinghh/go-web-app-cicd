@@ -70,8 +70,7 @@ The project includes a robust GitHub Actions pipeline with the following stages:
 ## 🐳 Docker Registry Integration
 
 Docker images stored on DockerHub:
-
-![Docker Registry](images/Screenshot-From-2025-09-18-05-49-42.jpg)
+![Docker Screenshot](images/Screenshot%20From%202025-09-18%2005-49-42.png)
 
 Details:
 - **Repository:** rohittsinghh/go-web-app
@@ -83,7 +82,8 @@ Details:
 
 Helm charts provide flexibility for multiple environments:
 
-![Helm Values](images/Screenshot-From-2025-09-18-05-50-55.jpg)
+![Helm Values Screenshot](images/Screenshot%20From%202025-09-18%2005-50-55.png)
+
 ```bash
 replicaCount: 1
 image:
@@ -101,8 +101,7 @@ enabled: false
 
 The deployed application home page:
 
-![Application Homepage](images/Screenshot-From-2025-09-18-12-55-45.jpg)
-
+![Application Homepage](images/Screenshot%20From%202025-09-18%2012-55-45.png)
 Features:
 - **Courses**: Zero to Hero DevOps topics
 - **Overview & About**: Project context
@@ -125,7 +124,12 @@ helm install go-web-app ./go-web-app-chart
 ```
 
 ---
+## 🚀 Argo CD Integration (Optional)
 
+Argo CD UI showing live deployment status:
+
+![Argo CD Screenshot](images/Screenshot%20From%202025-09-18%2005-44-32.png)
+---
 ## 🔒 Security
 
 - Distroless base images
